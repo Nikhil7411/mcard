@@ -1,8 +1,8 @@
 // === Edit your offers here daily ===
 const todayOffers = [
-  "Chicken Biryani + Thums Up Combo 135🍗🥤",
-  "₹149 Paneer Biryani + Butter Naan 🍛",
-  "₹99 Veggie Wrap + Soft Drink 🌯🥤",
+  "Chicken Biryani + Thums Up Combo🍗🥤 135",
+  "Paneer Biryani + Butter Naan🍛 ₹149",
+  "Veggie Wrap + Soft Drink 🌯🥤 ₹99",
 ];
 
 // === Script to display offers ===
