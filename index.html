@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SS Crave Kitchen Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Restaurant Header -->
+  <section class="intro">
+    <h2>SS Crave Kitchen</h2>
+    <p class="tagline">Taste The Difference</p>
+    <p class="contact">📞 6309639999 | 6309479845</p>
+  </section>
+
+  <!-- Special Offer Banner -->
+  <header class="banner">
+    <div class="offer-card">
+      <h1>🔥 Today's Special Offers 🔥</h1>
+      <ul id="specialOffers"></ul>
+    </div>
+  </header>
+
+  <!-- Category Buttons -->
+  <div class="category-container">
+    <button class="category-btn" data-category="combo">Combo Offer</button>
+    <button class="category-btn" data-category="starters">Veg/Non Veg Starters</button>
+    <button class="category-btn" data-category="roti">Roti Curries</button>
+    <button class="category-btn" data-category="biryani">Biryani</button>
+    <button class="category-btn" data-category="rice-noodles">Fried Rice & Noodles</button>
+    <button class="category-btn" data-category="drinks">Drinks</button>
+  </div>
+
+  <!-- Menu Containers -->
+  <main class="menu-container" id="combo-menu">
+    <!-- Veg Combo Offer Card -->
+    <div class="menu-card">
+      <h3>Veg Combo Offers</h3>
+      <ul>
+        <li><span>Veg Manchurian Fried Rice/Noodles + Mojito</span><span>₹169</span></li>
+        <li><span>Paneer Fried Rice/Noodles + Mojito</span><span>₹179</span></li>
+        <li><span>Veg Manchuria + Mojito</span><span>₹189</span></li>
+        <li><span>2 Roti + Veg Manchuria + Veg Fried Rice/Noodles</span><span>₹229</span></li>
+        <li><span>Paneer Butter Masala + 2 Roti</span><span>₹219</span></li>
+        <li><span>Malai Kofta Curry + 2 Roti</span><span>₹239</span></li>
+        <li><span>Kaju Paneer Biryani + Mojito</span><span>₹269</span></li>
+        <li><span>Veg Manchuria Dry + Paneer Biryani + Mojito</span><span>₹379</span></li>
+      </ul>
+    </div>
+
+    <!-- Egg Combo Offer Card -->
+    <div class="menu-card">
+      <h3>Egg Combo Offers</h3>
+      <ul>
+        <li><span>Egg Bhurji + 2 Roti</span><span>₹139</span></li>
+        <li><span>Egg Keema Curry + 2 Roti</span><span>₹169</span></li>
+      </ul>
+    </div>
+
+    <!-- Chicken Combo Offer Card -->
+    <div class="menu-card">
+      <h3>Chicken Combo Offers</h3>
+      <ul>
+        <li><span>Chicken Fried Rice/Noodles + Mojito</span><span>₹169</span></li>
+        <li><span>Chicken Manchuria + Mojito</span><span>₹239</span></li>
+        <li><span>Chicken Manchuria + Chicken Fried Rice/Noodles</span><span>₹269</span></li>
+        <li><span>Chicken 65 + Chicken Biryani + Mojito</span><span>₹379</span></li>
+        <li><span>Chicken 65 + 2 Roti</span><span>₹209</span></li>
+        <li><span>Butter Chicken + 2 Roti</span><span>₹269</span></li>
+        <li><span>Chicken Fry Piece Biryani + 2 Roti + Butter Chicken</span><span>₹419</span></li>
+      </ul>
+    </div>
+
+    <!-- Mix Combo Offer Card -->
+    <div class="menu-card">
+      <h3>Mix Combo Offers</h3>
+      <ul>
+        <li><span>Chicken Fried Rice/Noodles + Paneer Fried Rice/Noodles + Mojito</span><span>₹279</span></li>
+        <li><span>Veg Biryani + Chicken Biryani + Mojito</span><span>₹329</span></li>
+      </ul>
+    </div>
+  </main>
+
+  <main class="menu-container" id="starters-menu">
+    <!-- Veg Starters Card -->
+    <div class="menu-card">
+      <h3>Veg Starters</h3>
+      <ul>
+        <li><span>Veg Manchuria</span><span>₹129</span></li>
+        <li><span>Veg 65</span><span>₹139</span></li>
+        <li><span>Chilli Veg</span><span>₹139</span></li>
+        <li><span>Gobi Manchuria</span><span>₹139</span></li>
+        <li><span>Gobi 65</span><span>₹149</span></li>
+      </ul>
+    </div>
+
+    <!-- Paneer Starters Card -->
+    <div class="menu-card">
+      <h3>Paneer Starters</h3>
+      <ul>
+        <li><span>Paneer Manchuria</span><span>₹159</span></li>
+        <li><span>Paneer 65</span><span>₹159</span></li>
+        <li><span>Chilli Paneer</span><span>₹189</span></li>
+        <li><span>Chilli Garlic Paneer</span><span>₹189</span></li>
+        <li><span>Schezwan Paneer</span><span>₹199</span></li>
+        <li><span>Paneer Majestic</span><span>₹199</span></li>
+      </ul>
+    </div>
+
+    <!-- Baby Corn Starters Card -->
+    <div class="menu-card">
+      <h3>Baby Corn Starters</h3>
+      <ul>
+        <li><span>Baby Corn Manchuria</span><span>₹159</span></li>
+        <li><span>Baby Corn 65</span><span>₹169</span></li>
+        <li><span>Chilli Baby Corn</span><span>₹189</span></li>
+        <li><span>Baby Corn Majestic</span><span>₹199</span></li>
+      </ul>
+    </div>
+
+    <!-- Mushroom Starters Card -->
+    <div class="menu-card">
+      <h3>Mushroom Starters</h3>
+      <ul>
+        <li><span>Mushroom Manchuria</span><span>₹159</span></li>
+        <li><span>Mushroom 65</span><span>₹169</span></li>
+        <li><span>Chilli Mushroom</span><span>₹189</span></li>
+      </ul>
+    </div>
+
+    <!-- Egg Starters Card -->
+    <div class="menu-card">
+      <h3>Egg Starters</h3>
+      <ul>
+        <li><span>Egg Manchuria</span><span>₹149</span></li>
+        <li><span>Egg 65</span><span>₹169</span></li>
+        <li><span>Chilli Egg</span><span>₹179</span></li>
+        <li><span>Egg Roast</span><span>₹129</span></li>
+        <li><span>Egg Schezwan</span><span>₹189</span></li>
+      </ul>
+    </div>
+
+    <!-- Chicken Starters Card -->
+    <div class="menu-card">
+      <h3>Chicken Starters</h3>
+      <ul>
+        <li><span>Chicken Manchuria</span><span>₹179</span></li>
+        <li><span>Chicken 65</span><span>₹189</span></li>
+        <li><span>Chilli Chicken</span><span>₹199</span></li>
+        <li><span>Butan Chicken</span><span>₹209</span></li>
+        <li><span>Chicken Majestic</span><span>₹229</span></li>
+        <li><span>Chicken 555</span><span>₹229</span></li>
+        <li><span>Chicken Lollipops</span><span>₹249</span></li>
+        <li><span>Chicken Drumsticks</span><span>₹229</span></li>
+        <li><span>Lemon Chicken</span><span>₹229</span></li>
+        <li><span>Dragon Chicken</span><span>₹239</span></li>
+        <li><span>Pepper Chicken</span><span>₹219</span></li>
+        <li><span>Ginger Chicken</span><span>₹249</span></li>
+        <li><span>Garlic Chicken</span><span>₹239</span></li>
+      </ul>
+    </div>
+
+    <!-- Fish Starters Card -->
+    <div class="menu-card">
+      <h3>Fish Starters</h3>
+      <ul>
+        <li><span>Apollo Fish</span><span>₹249</span></li>
+        <li><span>Fish Manchuria</span><span>₹239</span></li>
+        <li><span>Fish 65</span><span>₹249</span></li>
+        <li><span>Chilli Fish</span><span>₹249</span></li>
+      </ul>
+    </div>
+
+    <!-- Prawns Starters Card -->
+    <div class="menu-card">
+      <h3>Prawns Starters</h3>
+      <ul>
+        <li><span>Prawns Manchuria</span><span>₹239</span></li>
+        <li><span>Prawns 65</span><span>₹249</span></li>
+        <li><span>Loose Prawns</span><span>₹259</span></li>
+      </ul>
+    </div>
+  </main>
+
+  <main class="menu-container" id="roti-menu">
+    <!-- Roti & Breads Card -->
+    <div class="menu-card">
+      <h3>Roti & Breads</h3>
+      <ul>
+        <li><span>Chapati (Each/2)</span><span>₹20/30</span></li>
+        <li><span>Phulka (Each/2)</span><span>₹20/30</span></li>
+        <li><span>Parota (Each/2)</span><span>₹25/40</span></li>
+      </ul>
+    </div>
+
+    <!-- Rice Card -->
+    <div class="menu-card">
+      <h3>Rice</h3>
+      <ul>
+        <li><span>Jeera Rice</span><span>₹139</span></li>
+        <li><span>Sambar Rice</span><span>₹149</span></li>
+        <li><span>Curd Rice</span><span>₹119</span></li>
+      </ul>
+    </div>
+
+    <!-- Veg Curries Card -->
+    <div class="menu-card">
+      <h3>Veg Curries</h3>
+      <ul>
+        <li><span>Kadai Veg</span><span>₹189</span></li>
+        <li><span>Malai Kofta Curry</span><span>₹219</span></li>
+        <li><span>Mixed Veg Curry</span><span>₹179</span></li>
+        <li><span>Kadai Paneer</span><span>₹189</span></li>
+        <li><span>Paneer Butter Masala</span><span>₹199</span></li>
+        <li><span>Kaju Paneer</span><span>₹249</span></li>
+        <li><span>Kaju Curry</span><span>₹219</span></li>
+        <li><span>Mushroom Curry</span><span>₹209</span></li>
+      </ul>
+    </div>
+
+    <!-- Chicken Curries Card -->
+    <div class="menu-card">
+      <h3>Chicken Curries</h3>
+      <ul>
+        <li><span>Chicken Curry</span><span>₹209</span></li>
+        <li><span>Telangana Chicken</span><span>₹219</span></li>
+        <li><span>Andhra Chicken</span><span>₹229</span></li>
+        <li><span>Butter Chicken</span><span>₹249</span></li>
+        <li><span>Kadai Chicken</span><span>₹219</span></li>
+        <li><span>Kaju Chicken</span><span>₹229</span></li>
+        <li><span>Chicken Masala</span><span>₹209</span></li>
+        <li><span>Chicken Moghlai</span><span>₹239</span></li>
+        <li><span>Chicken Afgani</span><span>₹249</span></li>
+      </ul>
+    </div>
+
+    <!-- Egg Curries Card -->
+    <div class="menu-card">
+      <h3>Egg Curries</h3>
+      <ul>
+        <li><span>Egg Bhurji</span><span>₹119</span></li>
+        <li><span>Egg Keema Curry</span><span>₹149</span></li>
+      </ul>
+    </div>
+
+    <!-- Sea Food Curries Card -->
+    <div class="menu-card">
+      <h3>Sea Food Curries</h3>
+      <ul>
+        <li><span>Fish Curry</span><span>₹239</span></li>
+        <li><span>Fish Masala</span><span>₹229</span></li>
+        <li><span>Prawns Curry</span><span>₹239</span></li>
+        <li><span>Telangana Prawns</span><span>₹229</span></li>
+        <li><span>Andhra Prawns</span><span>₹229</span></li>
+      </ul>
+    </div>
+  </main>
+
+  <main class="menu-container active" id="biryani-menu">
+    <!-- Veg Biryani Card -->
+    <div class="menu-card">
+      <h3>Veg Biryani</h3>
+      <ul>
+        <li><span>Veg Biryani (Single/Full)</span><span>₹139/259</span></li>
+        <li><span>Paneer Biryani (Single/Full)</span><span>₹199/379</span></li>
+        <li><span>Kaju Paneer Biryani (Single/Full)</span><span>₹209/399</span></li>
+        <li><span>Mushroom Biryani (Single/Full)</span><span>₹199/379</span></li>
+      </ul>
+    </div>
+
+    <!-- Egg Biryani Card -->
+    <div class="menu-card">
+      <h3>Egg Biryani</h3>
+      <ul>
+        <li><span>Egg Biryani (Single/Full)</span><span>₹139/259</span></li>
+      </ul>
+    </div>
+
+    <!-- Non-Veg Biryani Card -->
+    <div class="menu-card">
+      <h3>Non-Veg Biryani</h3>
+      <ul>
+        <li><span>Chicken Biryani (Single/Full/Family)</span><span>₹139/259/599</span></li>
+        <li><span>Chicken Fry Piece Biryani (Single/Full/Family)</span><span>₹159/299/649</span></li>
+        <li><span>Chicken 65 Biryani (Single/Full/Family)</span><span>₹199/379/799</span></li>
+        <li><span>Moghilai Biryani</span><span>₹379</span></li>
+        <li><span>Lollipop Biryani</span><span>₹369</span></li>
+      </ul>
+    </div>
+
+    <!-- Sea Food Biryani Card -->
+    <div class="menu-card">
+      <h3>Sea Food Biryani</h3>
+      <ul>
+        <li><span>Fish Biryani</span><span>₹369</span></li>
+        <li><span>Prawns Biryani</span><span>₹369</span></li>
+      </ul>
+    </div>
+
+    <!-- Extra Items Card -->
+    <div class="menu-card">
+      <h3>Extra Rice/Piece</h3>
+      <ul>
+        <li><span>Extra Biryani Rice</span><span>₹89</span></li>
+        <li><span>Extra Chicken DumPiece</span><span>₹69</span></li>
+        <li><span>Extra Boiled Egg</span><span>₹20</span></li>
+      </ul>
+    </div>
+  </main>
+
+  <main class="menu-container" id="rice-noodles-menu">
+    <!-- Veg Fried Rice Card -->
+    <div class="menu-card">
+      <h3>Veg Fried Rice</h3>
+      <ul>
+        <li><span>Veg Rice</span><span>₹89</span></li>
+        <li><span>Veg Soft Rice</span><span>₹89</span></li>
+        <li><span>Veg Schezwan Rice</span><span>₹99</span></li>
+        <li><span>Veg Manchuria Rice</span><span>₹109</span></li>
+        <li><span>Veg Chilli Garlic Rice</span><span>₹109</span></li>
+        <li><span>Paneer Rice</span><span>₹119</span></li>
+        <li><span>Paneer Schezwan Rice</span><span>₹119</span></li>
+        <li><span>Kaju Paneer Rice</span><span>₹129</span></li>
+        <li><span>Mushroom Rice</span><span>₹119</span></li>
+      </ul>
+    </div>
+
+    <!-- Egg Fried Rice Card -->
+    <div class="menu-card">
+      <h3>Egg Fried Rice</h3>
+      <ul>
+        <li><span>Egg Rice</span><span>₹99</span></li>
+        <li><span>Egg Soft Rice</span><span>₹99</span></li>
+        <li><span>Egg Schezwan Rice</span><span>₹129</span></li>
+        <li><span>DOB Egg Rice</span><span>₹109</span></li>
+        <li><span>Egg Chilli Garlic Rice</span><span>₹119</span></li>
+      </ul>
+    </div>
+
+    <!-- Chicken Fried Rice Card -->
+    <div class="menu-card">
+      <h3>Chicken Fried Rice</h3>
+      <ul>
+        <li><span>Chicken Fried Rice</span><span>₹109</span></li>
+        <li><span>Chicken Soft Rice</span><span>₹119</span></li>
+        <li><span>DOB Egg Chkn Rice</span><span>₹129</span></li>
+        <li><span>DOB Chicken Rice</span><span>₹139</span></li>
+        <li><span>DOB Egg DOB Chkn Rice</span><span>₹149</span></li>
+        <li><span>Chkn Schezwan Rice</span><span>₹129</span></li>
+        <li><span>Chilli Garlic Chkn Rice</span><span>₹129</span></li>
+      </ul>
+    </div>
+
+    <!-- Veg Noodles Card -->
+    <div class="menu-card">
+      <h3>Veg Noodles</h3>
+      <ul>
+        <li><span>Veg Noodles</span><span>₹89</span></li>
+        <li><span>Veg Soft Noodles</span><span>₹89</span></li>
+        <li><span>Veg Schezwani Noodles</span><span>₹99</span></li>
+        <li><span>Veg Manchuria Noodles</span><span>₹109</span></li>
+        <li><span>Veg Chilli Garlic Noodles</span><span>₹109</span></li>
+        <li><span>Paneer Noodles</span><span>₹119</span></li>
+        <li><span>Paneer Schezwan Noodles</span><span>₹119</span></li>
+        <li><span>Kaju Paneer Noodles</span><span>₹129</span></li>
+        <li><span>Mushroom Noodles</span><span>₹119</span></li>
+      </ul>
+    </div>
+
+    <!-- Egg Noodles Card -->
+    <div class="menu-card">
+      <h3>Egg Noodles</h3>
+      <ul>
+        <li><span>Egg Noodles</span><span>₹99</span></li>
+        <li><span>Egg Soft Noodles</span><span>₹99</span></li>
+        <li><span>Egg Schezwan Noodles</span><span>₹129</span></li>
+        <li><span>DOB Egg Noodles</span><span>₹109</span></li>
+        <li><span>Egg Chilli Garlic Noodles</span><span>₹119</span></li>
+      </ul>
+    </div>
+
+    <!-- Chicken Noodles Card -->
+    <div class="menu-card">
+      <h3>Chicken Noodles</h3>
+      <ul>
+        <li><span>Chicken Noodles</span><span>₹109</span></li>
+        <li><span>Chicken Soft Noodles</span><span>₹119</span></li>
+        <li><span>DOB Egg Chkn Noodles</span><span>₹129</span></li>
+        <li><span>DOB Chicken Noodles</span><span>₹139</span></li>
+        <li><span>DOB Egg DOB Chkn Noodles</span><span>₹149</span></li>
+        <li><span>Chkn Schezwan Noodles</span><span>₹129</span></li>
+        <li><span>Chilli Garlic Chkn Noodles</span><span>₹129</span></li>
+      </ul>
+    </div>
+  </main>
+
+  <main class="menu-container" id="drinks-menu">
+    <!-- Milkshakes Card -->
+    <div class="menu-card">
+      <h3>Milkshakes</h3>
+      <ul>
+        <li><span>Chocolate Shake</span><span>₹109</span></li>
+        <li><span>Oreo Shake</span><span>₹119</span></li>
+        <li><span>Butterscotch Shake</span><span>₹119</span></li>
+        <li><span>Kitkat Shake</span><span>₹129</span></li>
+        <li><span>Mango Shake</span><span>₹129</span></li>
+        <li><span>Dry Fruit Shake</span><span>₹149</span></li>
+      </ul>
+    </div>
+
+    <!-- Mojito Card -->
+    <div class="menu-card">
+      <h3>Mojito</h3>
+      <ul>
+        <li><span>Pineapple Mojito</span><span>₹79</span></li>
+        <li><span>Strawberry Mojito</span><span>₹79</span></li>
+        <li><span>Orange Mojito</span><span>₹79</span></li>
+        <li><span>Mango Mojito</span><span>₹79</span></li>
+        <li><span>Blackcurrent Mojito</span><span>₹79</span></li>
+        <li><span>Litchi Mojito</span><span>₹79</span></li>
+        <li><span>Kiwi Mojito</span><span>₹79</span></li>
+      </ul>
+    </div>
+
+    <!-- Lassis Card -->
+    <div class="menu-card">
+      <h3>Lassis</h3>
+      <ul>
+        <li><span>Sweet Lassi</span><span>₹89</span></li>
+        <li><span>Rose Lassi</span><span>₹99</span></li>
+        <li><span>Chocolate Lassi</span><span>₹99</span></li>
+        <li><span>Dry Fruit Lassi</span><span>₹109</span></li>
+        <li><span>Butter Milk</span><span>₹59</span></li>
+      </ul>
+    </div>
+
+    <!-- Ice Creams Card -->
+    <div class="menu-card">
+      <h3>Ice Creams</h3>
+      <ul>
+        <li><span>Vanilla</span><span>₹89</span></li>
+        <li><span>Butterscotch</span><span>₹99</span></li>
+        <li><span>Chocolate</span><span>₹99</span></li>
+      </ul>
+    </div>
+
+    <!-- Drinks Card -->
+    <div class="menu-card">
+      <h3>Drinks</h3>
+      <ul>
+        <li><span>Cool Drinks</span><span>₹20</span></li>
+        <li><span>Water Bottle 500Ml</span><span>₹10</span></li>
+        <li><span>Water Bottle 1L</span><span>₹20</span></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>Thank you for visiting SS Crave Kitchen 🍛 | Taste the Difference</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">↑</button>
+
+  <script src="specialoffer.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

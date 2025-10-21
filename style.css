@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #fff8f2, #ffe7d2);
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+/* === Intro (Moved Above Banner) === */
+.intro {
+  text-align: center;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #ff3c00;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.intro .tagline {
+  color: #555;
+  font-style: italic;
+  margin: 0.3rem 0;
+}
+
+.intro .contact {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* === Special Offer Banner === */
+.banner {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.offer-card {
+  text-align: center;
+  background: linear-gradient(135deg, #ff512f, #f09819);
+  color: #fff;
+  padding: 1.8rem 1.2rem;
+  border-radius: 25px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  width: 95%;
+  max-width: 900px;
+  animation: glow 2s infinite alternate ease-in-out;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  cursor: pointer;
+}
+
+.offer-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #ffb347, 0 0 60px #ff512f;
+  background: linear-gradient(135deg, #ff7b00, #ff3c00);
+}
+
+.offer-card h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9),
+               0 0 20px rgba(255, 150, 0, 0.9),
+               0 0 35px rgba(255, 80, 0, 1);
+  letter-spacing: 1.5px;
+  margin-bottom: 0.6rem;
+}
+
+.offer-card p {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+               0 0 20px rgba(255, 100, 0, 0.8),
+               0 0 30px rgba(255, 60, 0, 0.9);
+  letter-spacing: 0.7px;
+  animation: textPulse 2s infinite alternate ease-in-out;
+}
+
+@keyframes textPulse {
+  0% { text-shadow: 0 0 10px #fff, 0 0 25px #ff8a00, 0 0 40px #ff3c00; }
+  100% { text-shadow: 0 0 15px #fff, 0 0 35px #ffb347, 0 0 55px #ff512f; }
+}
+
+/* === Category Buttons === */
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+  padding: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.category-btn {
+  background: linear-gradient(135deg, #ff7b00, #ff3c00);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.category-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #ff3c00, #ff7b00);
+}
+
+.category-btn.active {
+  background: linear-gradient(135deg, #ff3c00, #ff7b00);
+  box-shadow: 0 0 15px rgba(255, 60, 0, 0.6);
+}
+
+/* === Menu Containers === */
+.menu-container {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  scroll-margin-top: 20px; /* For smooth scrolling */
+}
+
+.menu-container.active {
+  display: grid;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.3rem 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-card h3 {
+  text-align: center;
+  background: linear-gradient(90deg, #ff7b00, #ff3c00);
+  color: #fff;
+  padding: 0.6rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.menu-card ul {
+  list-style: none;
+}
+
+.menu-card li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #ddd;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.menu-card li span:last-child {
+  color: #ff3c00;
+  font-weight: 600;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  background: linear-gradient(135deg, #ff7b00, #ff3c00);
+  color: white;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  border-radius: 25px 25px 0 0;
+  font-size: 0.95rem;
+}
+
+.offer-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.8rem;
+}
+
+.offer-card ul li {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(255, 200, 150, 0.4);
+  backdrop-filter: blur(4px);
+  animation: fadeInUp 0.8s ease both;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.9),
+               0 0 20px rgba(255, 150, 0, 0.8);
+}
+
+/* subtle entry animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Back to Top Button === */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #ff7b00, #ff3c00);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* === Mobile Responsive Styles === */
+@media (max-width: 768px) {
+  .intro h2 {
+    font-size: 1.7rem;
+  }
+  
+  .offer-card h1 {
+    font-size: 1.6rem;
+  }
+  
+  .category-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+  
+  .category-btn {
+    padding: 1rem 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .menu-container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .menu-card {
+    padding: 1rem;
+  }
+  
+  .menu-card h3 {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+  
+  .menu-card li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+  
+  .offer-card h1 {
+    font-size: 1.4rem;
+  }
+  
+  .menu-container {
+    grid-template-columns: 1fr;
+  }
+}
